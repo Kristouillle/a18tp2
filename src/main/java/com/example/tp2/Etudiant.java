@@ -3,13 +3,13 @@ package com.example.tp2;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name ="Etudiant")
+@Table(name ="etudiant")
 public class Etudiant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer Id;
+    private Integer id;
     @Column(name = "nom")
     private String nom;
     @Column(name = "prenom")

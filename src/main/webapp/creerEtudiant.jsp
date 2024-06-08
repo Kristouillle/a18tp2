@@ -31,8 +31,8 @@
                         <td><input type="text" name="prenom" id="prenom" placeholder="prenom" class="form-control-auto-width"></td>
                     </tr>
                     <tr>
-                        <td><label for="specialiter" class="form-label">Spécialité:</label></td>
-                        <td><input type="text" name="specialiter" id="specialiter" placeholder="Spécialité" class="form-control-auto-width"></td>
+                        <td><label for="specialite" class="form-label">Spécialité:</label></td>
+                        <td><input type="text" name="specialite" id="specialite" placeholder="Spécialité" class="form-control-auto-width"></td>
                     </tr>
                 </table>
                 <br>

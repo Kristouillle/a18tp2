@@ -19,9 +19,7 @@ public class EtudiantController extends HttpServlet {
 
     public void init() {
         listeEtudiants = new ArrayList<>();
-        for(Etudiant etudiant : dao.readEtudiant()){
-            listeEtudiants.add(etudiant);
-        }
+        listeEtudiants.addAll(dao.readEtudiant());
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

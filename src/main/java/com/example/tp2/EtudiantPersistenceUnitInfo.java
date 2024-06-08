@@ -27,7 +27,7 @@ public class EtudiantPersistenceUnitInfo implements PersistenceUnitInfo {
     @Override
     public List<String> getManagedClassNames() {
         List<String> managedClasses = new ArrayList<>();
-        managedClasses.add("example.com.tpdeploy.Student");
+        managedClasses.add("com.example.tp2.Etudiant");
         return managedClasses;
     }
 
@@ -39,8 +39,8 @@ public class EtudiantPersistenceUnitInfo implements PersistenceUnitInfo {
         properties.setProperty("hibernate.show_sql", "true");
         properties.setProperty("hibernate.ejb.interceptor", "org.hibernate.ejb.interceptor.EmptyInterceptor");
         properties.setProperty("javax.persistence.jdbc.driver", "org.mariadb.jdbc.Driver");
-        properties.setProperty("javax.persistence.jdbc.url", "jdbc:mariadb://mysql-christopheviens.alwaysdata.net/christopheviens_tp");
-        properties.setProperty("javax.persistence.jdbc.user", "christopheviens");
+        properties.setProperty("javax.persistence.jdbc.url", "jdbc:mariadb://mysql-christopheviens.alwaysdata.net:3306/christopheviens_tp");
+        properties.setProperty("javax.persistence.jdbc.user", "362816");
         properties.setProperty("javax.persistence.jdbc.password", "Noladu95!!");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MariaDBDialect");
         return properties;
