@@ -17,28 +17,29 @@ public class Etudiant {
     @Column(name = "specialite")
     private String specialite;
 
-    /***Empty***/
     public Etudiant() {
     }
 
-    /***Contructor***/
-    public Etudiant(String nom, String prenom, String specialite) {
+    // CONSTRUCTEUR
+    public Etudiant(Integer id, String nom, String prenom, String specialite) {
+        this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.specialite = specialite;
     }
 
-    /***Getters***/
+
+    // GETTERS ET SETTERS
+    public Integer getId() {return id;}
     public String getNom() {return nom;}
     public String getPrenom() {return prenom;}
     public String getSpecialite() {return specialite;}
 
-    /***Setters***/
+    public void setId(Integer id) {this.id = id;}
     public void setNom(String nom) {this.nom = nom;}
     public void setPrenom(String prenom) {this.prenom = prenom;}
     public void setSpecialite(String specialite) {this.specialite = specialite;}
 
-    /***ToString***/
     @Override
     public String toString(){return String.format("Nom: %s , Prénom: %s , Spécialité: %s", nom, prenom , specialite);}
 

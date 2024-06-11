@@ -11,10 +11,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 @WebServlet(name="etudiantServlet", value = "/Etudiant")
-public class EtudiantController extends HttpServlet {
-
-    private Etudiant etudiant = new Etudiant();
+    public class EtudiantController extends HttpServlet {
     private IEtudiant_DAO dao = new Etudiant_DAO();
+    private Etudiant etudiant = new Etudiant();
     private ArrayList<Etudiant> listeEtudiants = new ArrayList<>();
 
     public void init() {
@@ -23,10 +22,8 @@ public class EtudiantController extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         init();
         request.setAttribute("mes_etudiants", listeEtudiants);
-
         RequestDispatcher dispatcher = request.getRequestDispatcher("afficherEtudiants.jsp");
         try {
             dispatcher.forward(request, response);
@@ -37,7 +34,6 @@ public class EtudiantController extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException , IOException {
-
         String nom = request.getParameter("nom");
         String prenom = request.getParameter("prenom");
         String specialite = request.getParameter("specialite");

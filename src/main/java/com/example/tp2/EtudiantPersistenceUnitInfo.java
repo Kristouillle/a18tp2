@@ -25,10 +25,56 @@ public class EtudiantPersistenceUnitInfo implements PersistenceUnitInfo {
     }
 
     @Override
+    public PersistenceUnitTransactionType getTransactionType() {
+        return null;
+    }
+
+    // MÉTHODES IMPLÉMENTÉES
+    @Override
+    public DataSource getJtaDataSource() {
+        return null;
+    }
+
+    @Override
+    public DataSource getNonJtaDataSource() {
+        return null;
+    }
+
+    @Override
+    public List<String> getMappingFileNames() {
+        return null;
+    }
+
+    @Override
+    public List<URL> getJarFileUrls() {
+        return null;
+    }
+
+    @Override
+    public URL getPersistenceUnitRootUrl() {
+        return null;
+    }
+
+    @Override
     public List<String> getManagedClassNames() {
         List<String> managedClasses = new ArrayList<>();
         managedClasses.add("com.example.tp2.Etudiant");
         return managedClasses;
+    }
+
+    @Override
+    public boolean excludeUnlistedClasses() {
+        return false;
+    }
+
+    @Override
+    public SharedCacheMode getSharedCacheMode() {
+        return null;
+    }
+
+    @Override
+    public ValidationMode getValidationMode() {
+        return null;
     }
 
     @Override
@@ -46,31 +92,25 @@ public class EtudiantPersistenceUnitInfo implements PersistenceUnitInfo {
         return properties;
     }
 
-    //No use yet
     @Override
-    public PersistenceUnitTransactionType getTransactionType() {return null;}
+    public String getPersistenceXMLSchemaVersion() {
+        return null;
+    }
+
     @Override
-    public DataSource getJtaDataSource() {return null;}
+    public ClassLoader getClassLoader() {
+        return null;
+    }
+
     @Override
-    public DataSource getNonJtaDataSource() {return null;}
+    public void addTransformer(ClassTransformer classTransformer) {
+
+    }
+
     @Override
-    public List<String> getMappingFileNames() {return null;}
-    @Override
-    public List<URL> getJarFileUrls() {return null;}
-    @Override
-    public URL getPersistenceUnitRootUrl() {return null;}
-    @Override
-    public boolean excludeUnlistedClasses() {return false;}
-    @Override
-    public SharedCacheMode getSharedCacheMode() {return null;}
-    @Override
-    public ValidationMode getValidationMode() {return null;}
-    @Override
-    public String getPersistenceXMLSchemaVersion() {return null;}
-    @Override
-    public ClassLoader getClassLoader() {return null;}
-    @Override
-    public void addTransformer(ClassTransformer classTransformer) {}
-    @Override
-    public ClassLoader getNewTempClassLoader() {return null;}
+    public ClassLoader getNewTempClassLoader() {
+        return null;
+    }
+
+
 }

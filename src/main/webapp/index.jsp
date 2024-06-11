@@ -6,30 +6,41 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.jsp">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="btn nav-link" href="index.jsp">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn nav-link" href="Etudiant">Liste d'étudiants</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn nav-link" href="creerEtudiant.jsp">Ajouter étudiant</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
 <div class="text-center">
     <br>
     <h1 >Étudiants</h1>
     <br>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <div class="col">
-                <a href="Etudiant" class="btn btn-primary text-center" style="width: 100%">Liste des Étudiants</a>
-            </div>
-        </div>
-        <div class="col"></div>
-        <br>
-        <br>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <a href="creerEtudiant.jsp" class="btn btn-success text-center" style="width: 100%">Créer un étudiant</a>
-        </div>
-        <div class="col"></div>
-    </div>
+<div class="container mt-5">
+    <a href="creerEtudiant.jsp" class="btn link-primary text-center" style="width: 100%">Créer un étudiant</a>
+    <br>
+    <a href="Etudiant" class="btn link-secondary text-center" style="width: 100%">Liste des étudiants</a>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

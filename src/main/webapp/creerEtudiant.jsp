@@ -11,43 +11,51 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous">
 </script>
-<div class="text-center">
-    <br>
-    <h1>Ajouter un étudiant</h1>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <form action="Etudiant" method="post">
-                <table class="text-center" style="width: 100%">
-                    <tr>
-                        <td><label for="nom" class="form-label">Nom:</label></td>
-                        <td><input type="text" name="nom" id="nom" placeholder="nom" class="form-control-auto-width"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="prenom" class="form-label">Prenom:</label></td>
-                        <td><input type="text" name="prenom" id="prenom" placeholder="prenom" class="form-control-auto-width"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="specialite" class="form-label">Spécialité:</label></td>
-                        <td><input type="text" name="specialite" id="specialite" placeholder="Spécialité" class="form-control-auto-width"></td>
-                    </tr>
-                </table>
-                <br>
-                <input type="submit" name="submitForm" id="submitForm" value="Send" class="btn btn-primary text-center" style="width: 90%">
-            </form>
-        </div>
-        <div class="col"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.jsp">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="btn nav-link" href="index.jsp">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn nav-link" href="Etudiant">Liste d'étudiants</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn nav-link" href="creerEtudiant.jsp">Ajouter étudiant</a>
+            </li>
+        </ul>
     </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <a href="index.jsp" class="btn btn-success text-center" style="width: 90%">Home</a>
+</nav>
+
+
+<div class="container mt-5">
+    <h2>Ajouter un étudiant</h2>
+    <form action="Etudiant" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom de famille">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
         </div>
-        <div class="col"></div>
-    </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="specialite">Spécialité:</label>
+                <input type="text" class="form-control" id="specialite" placeholder="Spécialité">
+            </div>
+        </div>
+        <br>
+        <input type="submit" name="submitForm" id="submitForm" value="Send" class="btn btn-primary text-center" style="width: 100%">
+    </form>
 </div>
 </body>
 </html>
