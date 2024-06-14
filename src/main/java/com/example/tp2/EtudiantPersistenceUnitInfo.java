@@ -29,7 +29,7 @@ public class EtudiantPersistenceUnitInfo implements PersistenceUnitInfo {
         return null;
     }
 
-    // MÉTHODES IMPLÉMENTÉES
+    // MÉTHODES IMPLÉMENTÉES AUTOMATIQUEMENT
     @Override
     public DataSource getJtaDataSource() {
         return null;

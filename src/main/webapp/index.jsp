@@ -32,9 +32,7 @@
 
 
 <div class="text-center">
-    <br>
-    <h1 >Étudiants</h1>
-    <br>
+    <h1 >Étudiants</h1><br>
 </div>
 <div class="container mt-5">
     <a href="creerEtudiant.jsp" class="btn link-primary text-center" style="width: 100%">Créer un étudiant</a>

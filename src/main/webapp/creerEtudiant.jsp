@@ -54,7 +54,7 @@
             </div>
         </div>
         <br>
-        <input type="submit" name="submitForm" id="submitForm" value="Send" class="btn btn-primary text-center" style="width: 100%">
+        <input type="submit" name="submitForm" id="submitForm" value="Send" class="btn btn-primary text-center">
     </form>
 </div>
 </body>
