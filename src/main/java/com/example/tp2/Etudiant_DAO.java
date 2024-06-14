@@ -19,7 +19,6 @@ public class Etudiant_DAO implements IEtudiant_DAO {
         this.entityManager = entityManagerFactory.createEntityManager();
     }
 
-
     /***********************************
     ***********  C  R  U  D  ***********
     ************************************/
