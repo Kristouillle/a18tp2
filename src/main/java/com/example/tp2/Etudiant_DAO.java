@@ -50,6 +50,5 @@ public class Etudiant_DAO implements IEtudiant_DAO {
     public void deleteEtudiant(Etudiant etudiant) {
 
     }
-/*push test*/
 
 }
